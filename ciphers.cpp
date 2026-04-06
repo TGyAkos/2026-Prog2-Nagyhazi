@@ -41,60 +41,6 @@ void validate_key(const std::string& key) {
 }
 
 
-Cipher *CaesarCipher::clone() const {
-    return new CaesarCipher(shift);
-}
-
-std::string CaesarCipher::decode(const std::string &ciphertext) {
-    validate_text(ciphertext);
-    std::string out = ciphertext;
-    for (size_t i = 0; i < out.size(); ++i) {
-        out[i] = shift_char(out[i], -shift);
-    }
-    return out;
-}
-
-std::string CaesarCipher::encode(const std::string &message) {
-    validate_text(message);
-    std::string out = message;
-    for (size_t i = 0; i < out.size(); ++i) {
-        out[i] = shift_char(out[i], shift);
-    }
-    return out;
-}
-
-CaesarCipher::~CaesarCipher() {}
-
-Cipher *MyCipher::clone() const {
-    return new MyCipher(key.c_str(), offset);
-}
-
-std::string MyCipher::decode(const std::string &ciphertext) {
-    validate_key(key);
-    validate_text(ciphertext);
-    std::string out = ciphertext;
-    const size_t key_len = key.size();
-    for (size_t i = 0; i < out.size(); ++i) {
-        int key_shift = key[i % key_len] - 'a';
-        out[i] = shift_char(out[i], -(offset + i + key_shift));
-    }
-    return out;
-}
-
-std::string MyCipher::encode(const std::string &message) {
-    validate_key(key);
-    validate_text(message);
-    std::string out = message;
-    const size_t key_len = key.size();
-    for (size_t i = 0; i < out.size(); ++i) {
-        int key_shift = key[i % key_len] - 'a';
-        out[i] = shift_char(out[i], offset + i + key_shift);
-    }
-    return out;
-}
-
-MyCipher::~MyCipher() {}
-
 CipherQueue::CipherQueue(const CipherQueue& other) {
     for (size_t i = 0; i < other.ciphers.size(); ++i) {
         ciphers.push_back(other.ciphers[i]->clone());
