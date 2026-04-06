@@ -8,13 +8,13 @@
 
 #include "CipherFactory.h"
 
-template <typename T>
+template<typename T>
 struct Registrar {
-    Registrar(const std::string& name) {
-        CipherFactory::getInstance().registerCipher(name, [](const std::vector<std::string>& params) -> Cipher* { return new T(params); });
+    Registrar(const std::string &name) {
+        CipherFactory::getInstance().registerCipher(
+                name, [](const std::vector<std::string> &params) -> Cipher * { return new T(params); });
     }
 };
 
 
-
-#endif //TITKOSITO_REGISTRAR_H
+#endif // TITKOSITO_REGISTRAR_H

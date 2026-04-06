@@ -6,6 +6,8 @@
 
 #include "StringFuncs.h"
 
+static Registrar<CaesarCipher> regCaesarCipher("CaesarCipher");
+
 const std::string CaesarCipher::getCipherString() const {
     return "CaesarCipher:" + std::to_string(shift);
 }
@@ -19,6 +21,8 @@ std::string CaesarCipher::encode(const std::string &message) {
     for (size_t i = 0; i < out.size(); ++i) {
         if (message[i] == ' ' || (message[i] >= 'a' && message[i] <= 'z'))
             out[i] = StringFuncs::shift_char(out[i], shift);
+        else if (message[i] >= 'A' && message[i] <= 'Z')
+            out[i] = StringFuncs::shift_char(tolower(out[i]), shift);
         else
             out[i] = message[i];
     }

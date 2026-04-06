@@ -8,6 +8,8 @@
 
 #include "StringFuncs.h"
 
+static Registrar<MyCipher> regMyCipher("MyCipher");
+
 const std::string MyCipher::getCipherString() const {
     return "MyCipher:" + key + "," + std::to_string(offset);
 }
@@ -17,7 +19,7 @@ void MyCipher::validate_key(const std::string &key) {
         throw std::runtime_error(std::string("Key cannot be empty"));
     }
     for (size_t i = 0; i < key.size(); ++i) {
-        if (key[i] < 'a' || key[i] > 'z') {
+        if ((key[i] < 'a' || key[i] > 'z') && (key[i] < 'A' || key[i] > 'Z')) {
             throw std::runtime_error(std::string("Invalid character '") + key[i] + std::string("'"));
         }
     }

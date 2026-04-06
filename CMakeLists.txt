@@ -25,6 +25,8 @@ add_executable(titkosito main.cpp
         memtrace.cpp
         memtrace.h
         gtest_lite.h
+        test.cpp
+        test.h
 )
 
 target_compile_options(titkosito PRIVATE

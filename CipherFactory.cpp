@@ -41,4 +41,6 @@ Cipher* CipherFactory::createCipher(const std::string& cipher_string) {
 }
 
 bool CipherFactory::cipherExists(const std::string &name) const { return ciphers.find(name) != ciphers.end(); }
-CipherFactory::~CipherFactory() { ciphers.clear(); }
+CipherFactory::~CipherFactory() {
+    ciphers.clear();
+}

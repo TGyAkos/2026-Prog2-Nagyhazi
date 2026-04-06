@@ -23,6 +23,21 @@ CipherList &CipherList::operator=(const CipherList &other) {
     }
     return *this;
 }
+CipherList CipherList::operator+(const CipherList& other) const {
+    CipherList result(*this);
+    result += other;
+    return result;
+}
+CipherList& CipherList::operator+=(const CipherList& other) {
+    if (this == &other) {
+        CipherList tmp(other);
+        return (*this += tmp);
+    }
+    for (const Cipher* cipher : other) {
+        addCipher(cipher->clone());
+    }
+    return *this;
+}
 Cipher &CipherList::operator[](size_t idx) {
     if (idx >= ciphers.size() || ciphers.empty())
         throw std::out_of_range("Cipher index out of range");

@@ -13,11 +13,13 @@
 class CipherList {
     std::vector<Cipher *> ciphers;
 public:
-    using iterator = std::vector<Cipher*>::iterator;
-    using const_iterator = std::vector<Cipher*>::const_iterator;
+    using iterator = std::vector<Cipher *>::iterator;
+    using const_iterator = std::vector<Cipher *>::const_iterator;
     CipherList();
     CipherList(const CipherList &other);
     CipherList &operator=(const CipherList &other);
+    CipherList operator+(const CipherList &other) const;
+    CipherList &operator+=(const CipherList &other);
     Cipher &operator[](size_t idx);
     const Cipher &operator[](size_t idx) const;
     void addCipher(Cipher *cipher);

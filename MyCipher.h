@@ -20,11 +20,9 @@ public:
     MyCipher(const std::vector<std::string>& params) : key(params[0]), offset(params.size() > 1 ? stoi(params[1]) : 0) {}
     const std::string getCipherString() const override;
     Cipher *clone() const override;
-    std::string decode(const std::string &ciphertext) override;
     std::string encode(const std::string &message) override;
+    std::string decode(const std::string &ciphertext) override;
     ~MyCipher() override;
 };
-
-static Registrar<MyCipher> regMyCipher("MyCipher");
 
 #endif //TITKOSITO_MYCIPHER_H

@@ -18,12 +18,10 @@ public:
     CaesarCipher(const std::vector<std::string>& params) : shift(params[0][0] == '\\' ? 0 : stoi(params[0])) {}
     const std::string getCipherString() const override;
     Cipher *clone() const override;
-    std::string decode(const std::string &ciphertext) override;
     std::string encode(const std::string &message) override;
+    std::string decode(const std::string &ciphertext) override;
     ~CaesarCipher() override;
 };
-
-static Registrar<CaesarCipher> regCaesarCipher("CaesarCipher");
 
 
 
