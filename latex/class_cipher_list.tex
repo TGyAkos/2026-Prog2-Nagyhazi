@@ -1,0 +1,267 @@
+\doxysection{Cipher\+List Class Reference}
+\hypertarget{class_cipher_list}{}\label{class_cipher_list}\index{CipherList@{CipherList}}
+
+
+{\ttfamily \+\#include $<$Cipher\+List.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cipher_list_aed4b79b06ac514d552420ec72337f44d}\label{class_cipher_list_aed4b79b06ac514d552420ec72337f44d} 
+using {\bfseries iterator} = std::\+vector$<$\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*}$>$::\+iterator
+\begin{DoxyCompactList}\small\item\em Nem konstans bejáró típus. \end{DoxyCompactList}\item 
+\Hypertarget{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}\label{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271} 
+using {\bfseries const\+\_\+iterator} = std::\+vector$<$\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*}$>$::\+const\+\_\+iterator
+\begin{DoxyCompactList}\small\item\em Konstans bejáró típus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{Cipher\+List}} ()
+\item 
+\doxymbox{\hyperlink{class_cipher_list_a1def5b70a95af8ab03c1a5d3da1d5b87}{Cipher\+List}} (const \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \&other)
+\item 
+\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \& \doxymbox{\hyperlink{class_cipher_list_afeb98aa6283de129e7d7af440ba613fb}{operator=}} (const \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \&other)
+\item 
+\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \doxymbox{\hyperlink{class_cipher_list_abc331dd7ba3798a7ff5986fb4ab606eb}{operator+}} (const \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \&other) const
+\item 
+\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \& \doxymbox{\hyperlink{class_cipher_list_a19cac3d65367e3ead5b8fccc4979fc8d}{operator+=}} (const \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \&other)
+\item 
+\doxymbox{\hyperlink{class_cipher}{Cipher}} \& \doxymbox{\hyperlink{class_cipher_list_af604cecabcda806bca59067e6f25bcb3}{operator\+[$\,$]\+}} (size\+\_\+t idx)
+\item 
+const \doxymbox{\hyperlink{class_cipher}{Cipher}} \& \doxymbox{\hyperlink{class_cipher_list_ae4cde6810a90bfb833fa0def3f752d46}{operator\+[$\,$]\+}} (size\+\_\+t idx) const
+\item 
+void \doxymbox{\hyperlink{class_cipher_list_a43a50611a0dac3b3b8039220ed7c7e22}{add\+Cipher}} (\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*}cipher)
+\item 
+std::\+string \doxymbox{\hyperlink{class_cipher_list_ab144cd16395c997155fa197d0186862f}{encode}} (const std::\+string \&message)
+\item 
+std::\+string \doxymbox{\hyperlink{class_cipher_list_a98e2e0c620b5cd7e375b84193fb8499f}{decode}} (const std::\+string \&ciphertext)
+\item 
+\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_cipher_list_ae8e420376ec825631d686cce37029d3b}{clone}} () const
+\item 
+\doxymbox{\hyperlink{class_cipher_list_aed4b79b06ac514d552420ec72337f44d}{iterator}} \doxymbox{\hyperlink{class_cipher_list_a82931224abda9c05491d17cc4e56342e}{begin}} ()
+\item 
+\doxymbox{\hyperlink{class_cipher_list_aed4b79b06ac514d552420ec72337f44d}{iterator}} \doxymbox{\hyperlink{class_cipher_list_a3f7a0124a89e7e3ce546df3d4dc52435}{end}} ()
+\item 
+\doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\+\_\+iterator}} \doxymbox{\hyperlink{class_cipher_list_a2dabfb0a2f99f60010f01bd7304da167}{begin}} () const
+\item 
+\doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\+\_\+iterator}} \doxymbox{\hyperlink{class_cipher_list_a17dc992c45086d3fbc9e7e0cfc5ca40b}{end}} () const
+\item 
+\doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\+\_\+iterator}} \doxymbox{\hyperlink{class_cipher_list_a0ddfa8b65ad783cf6d28d89f8f521ab5}{cbegin}} () const
+\item 
+\doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\+\_\+iterator}} \doxymbox{\hyperlink{class_cipher_list_aad81e245be66e26a154bd15c75838b55}{cend}} () const
+\item 
+\doxymbox{\hyperlink{class_cipher_list_a304d2fb9e0582bb1409406b3195a6244}{\texorpdfstring{$\sim$}{\string~}\+Cipher\+List}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kódoló objektumok sorrendbe rendezett listája, láncolt kódoláshoz/\+dekódoláshoz. 
+
+\label{doc-constructors}
+\Hypertarget{class_cipher_list_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cipher_list_a283e7058e887a39f5fc22011d286206d}\index{CipherList@{CipherList}!CipherList@{CipherList}}
+\index{CipherList@{CipherList}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{CipherList()}{CipherList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cipher_list_a283e7058e887a39f5fc22011d286206d} 
+Cipher\+List::\+\+Cipher\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Alap konstruktor. \Hypertarget{class_cipher_list_a1def5b70a95af8ab03c1a5d3da1d5b87}\index{CipherList@{CipherList}!CipherList@{CipherList}}
+\index{CipherList@{CipherList}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{CipherList()}{CipherList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cipher_list_a1def5b70a95af8ab03c1a5d3da1d5b87} 
+Cipher\+List::\+\+Cipher\+List (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \&}]{other}{}\end{DoxyParamCaption})}
+
+Másoló konstruktor mély másolással. 
+\begin{DoxyParams}{Parameters}
+{\em other} & a másolandó kódolólista \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cipher_list_a304d2fb9e0582bb1409406b3195a6244}\index{CipherList@{CipherList}!````~CipherList@{\texorpdfstring{$\sim$}{\string~}CipherList}}
+\index{````~CipherList@{\texorpdfstring{$\sim$}{\string~}CipherList}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CipherList()}{\string~CipherList()}}
+{\footnotesize\ttfamily \label{class_cipher_list_a304d2fb9e0582bb1409406b3195a6244} 
+Cipher\+List::\+\texorpdfstring{$\sim$}{\string~}\+Cipher\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Felszabadítja a listában tárolt dinamikus objektumokat. 
+
+\label{doc-func-members}
+\Hypertarget{class_cipher_list_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cipher_list_a43a50611a0dac3b3b8039220ed7c7e22}\index{CipherList@{CipherList}!addCipher@{addCipher}}
+\index{addCipher@{addCipher}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{addCipher()}{addCipher()}}
+{\footnotesize\ttfamily \label{class_cipher_list_a43a50611a0dac3b3b8039220ed7c7e22} 
+void Cipher\+List::\+add\+Cipher (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*}}]{cipher}{}\end{DoxyParamCaption})}
+
+Új kódolót ad a lista végéhez. 
+\begin{DoxyParams}{Parameters}
+{\em cipher} & a hozzáadandó kódoló pointere \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cipher_list_a82931224abda9c05491d17cc4e56342e}\index{CipherList@{CipherList}!begin@{begin}}
+\index{begin@{begin}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cipher_list_a82931224abda9c05491d17cc4e56342e} 
+\doxymbox{\hyperlink{class_cipher_list_aed4b79b06ac514d552420ec72337f44d}{iterator}} Cipher\+List::\+begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Visszaadja a lista elejére mutató iterátort. \begin{DoxyReturn}{Returns}
+nem konstans iterátor az első elemre 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_a2dabfb0a2f99f60010f01bd7304da167}\index{CipherList@{CipherList}!begin@{begin}}
+\index{begin@{begin}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cipher_list_a2dabfb0a2f99f60010f01bd7304da167} 
+\doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\+\_\+iterator}} Cipher\+List::\+begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Visszaadja a lista elejére mutató konstans iterátort. \begin{DoxyReturn}{Returns}
+konstans iterátor az első elemre 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_a0ddfa8b65ad783cf6d28d89f8f521ab5}\index{CipherList@{CipherList}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily \label{class_cipher_list_a0ddfa8b65ad783cf6d28d89f8f521ab5} 
+\doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\+\_\+iterator}} Cipher\+List::\+cbegin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Visszaadja a lista elejére mutató konstans iterátort. \begin{DoxyReturn}{Returns}
+konstans iterátor az első elemre 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_aad81e245be66e26a154bd15c75838b55}\index{CipherList@{CipherList}!cend@{cend}}
+\index{cend@{cend}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily \label{class_cipher_list_aad81e245be66e26a154bd15c75838b55} 
+\doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\+\_\+iterator}} Cipher\+List::\+cend (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Visszaadja a lista végét jelölő konstans iterátort. \begin{DoxyReturn}{Returns}
+konstans végiterátor 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_ae8e420376ec825631d686cce37029d3b}\index{CipherList@{CipherList}!clone@{clone}}
+\index{clone@{clone}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_cipher_list_ae8e420376ec825631d686cce37029d3b} 
+\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \texorpdfstring{$\ast$}{*} Cipher\+List::\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Létrehoz egy dinamikus másolatot a listáról. \begin{DoxyReturn}{Returns}
+a létrehozott másolat pointere 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_a98e2e0c620b5cd7e375b84193fb8499f}\index{CipherList@{CipherList}!decode@{decode}}
+\index{decode@{decode}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{class_cipher_list_a98e2e0c620b5cd7e375b84193fb8499f} 
+std::\+string Cipher\+List::\+decode (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{ciphertext}{}\end{DoxyParamCaption})}
+
+Fordított sorrendben visszafejti a listával titkosított szöveget. 
+\begin{DoxyParams}{Parameters}
+{\em ciphertext} & titkosított üzenet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+megfejtett nyílt szöveg 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_ab144cd16395c997155fa197d0186862f}\index{CipherList@{CipherList}!encode@{encode}}
+\index{encode@{encode}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{class_cipher_list_ab144cd16395c997155fa197d0186862f} 
+std::\+string Cipher\+List::\+encode (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{message}{}\end{DoxyParamCaption})}
+
+Sorban alkalmazza a listában lévő kódolókat a szövegre. 
+\begin{DoxyParams}{Parameters}
+{\em message} & titkosítandó üzenet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+titkosított szöveg 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_a3f7a0124a89e7e3ce546df3d4dc52435}\index{CipherList@{CipherList}!end@{end}}
+\index{end@{end}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cipher_list_a3f7a0124a89e7e3ce546df3d4dc52435} 
+\doxymbox{\hyperlink{class_cipher_list_aed4b79b06ac514d552420ec72337f44d}{iterator}} Cipher\+List::\+end (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Visszaadja a lista végét jelölő iterátort. \begin{DoxyReturn}{Returns}
+nem konstans végiterátor 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_a17dc992c45086d3fbc9e7e0cfc5ca40b}\index{CipherList@{CipherList}!end@{end}}
+\index{end@{end}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cipher_list_a17dc992c45086d3fbc9e7e0cfc5ca40b} 
+\doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\+\_\+iterator}} Cipher\+List::\+end (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Visszaadja a lista végét jelölő konstans iterátort. \begin{DoxyReturn}{Returns}
+konstans végiterátor 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_abc331dd7ba3798a7ff5986fb4ab606eb}\index{CipherList@{CipherList}!operator+@{operator+}}
+\index{operator+@{operator+}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_cipher_list_abc331dd7ba3798a7ff5986fb4ab606eb} 
+\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} Cipher\+List::\+operator+ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+Két kódolólista összefűzése új listába. 
+\begin{DoxyParams}{Parameters}
+{\em other} & a hozzáfűzendő kódolólista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+az összefűzött új lista 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_a19cac3d65367e3ead5b8fccc4979fc8d}\index{CipherList@{CipherList}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \label{class_cipher_list_a19cac3d65367e3ead5b8fccc4979fc8d} 
+\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \& Cipher\+List::\+operator+= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \&}]{other}{}\end{DoxyParamCaption})}
+
+Hozzáfűz egy másik listát az aktuálishoz. 
+\begin{DoxyParams}{Parameters}
+{\em other} & a hozzáfűzendő kódolólista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+az aktuális objektum referenciaja 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_afeb98aa6283de129e7d7af440ba613fb}\index{CipherList@{CipherList}!operator=@{operator=}}
+\index{operator=@{operator=}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_cipher_list_afeb98aa6283de129e7d7af440ba613fb} 
+\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \& Cipher\+List::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \&}]{other}{}\end{DoxyParamCaption})}
+
+Értékadó operátor mély másolással. 
+\begin{DoxyParams}{Parameters}
+{\em other} & a másolandó kódolólista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+az aktuális objektum referenciaja 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_af604cecabcda806bca59067e6f25bcb3}\index{CipherList@{CipherList}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cipher_list_af604cecabcda806bca59067e6f25bcb3} 
+\doxymbox{\hyperlink{class_cipher}{Cipher}} \& Cipher\+List::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx}{}\end{DoxyParamCaption})}
+
+Elér egy kódolót index alapján. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & a kért index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+hivatkozás a kiválasztott kódolóra 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_list_ae4cde6810a90bfb833fa0def3f752d46}\index{CipherList@{CipherList}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!CipherList@{CipherList}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cipher_list_ae4cde6810a90bfb833fa0def3f752d46} 
+const \doxymbox{\hyperlink{class_cipher}{Cipher}} \& Cipher\+List::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx}{}\end{DoxyParamCaption}) const}
+
+Elér egy kódolót index alapján konstans környezetben. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & a kért index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+konstans hivatkozás a kiválasztott kódolóra 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Cipher\+List.\+h\end{DoxyCompactItemize}

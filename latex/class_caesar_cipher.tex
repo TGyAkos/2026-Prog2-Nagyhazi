@@ -1,0 +1,142 @@
+\doxysection{Caesar\+Cipher Class Reference}
+\hypertarget{class_caesar_cipher}{}\label{class_caesar_cipher}\index{CaesarCipher@{CaesarCipher}}
+
+
+{\ttfamily \+\#include $<$Caesar\+Cipher.\+h$>$}
+
+Inheritance diagram for Caesar\+Cipher:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_caesar_cipher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_caesar_cipher_a567a7824c9db06df3e1aa2f50c49f2bd}{Caesar\+Cipher}} (int shift)
+\item 
+\doxymbox{\hyperlink{class_caesar_cipher_a3d7d350fd6630d69138fcf0c7965594f}{Caesar\+Cipher}} (const std::\+vector$<$ std::\+string $>$ \&params)
+\item 
+const std::\+string \doxymbox{\hyperlink{class_caesar_cipher_ab4f0d5b5c5d2d13bbfe3459d38c0d514}{get\+Cipher\+String}} () const override
+\item 
+\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_caesar_cipher_a78acb81007f66d402a9b0ef7e9e77a9f}{clone}} () const override
+\item 
+std::\+string \doxymbox{\hyperlink{class_caesar_cipher_a451fcb48722e5b8e88c132c8e8453fb1}{encode}} (const std::\+string \&message) override
+\item 
+std::\+string \doxymbox{\hyperlink{class_caesar_cipher_a6131bcafaf34c76baa9e5f65d8d7fc65}{decode}} (const std::\+string \&ciphertext) override
+\item 
+\doxymbox{\hyperlink{class_caesar_cipher_a376252c2347d454984c5acc9269f0eea}{\texorpdfstring{$\sim$}{\string~}\+Caesar\+Cipher}} () override=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_cipher}{Cipher}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_cipher_a06de38ffc1b3f5217251b57627d46b01}{\texorpdfstring{$\sim$}{\string~}\+Cipher}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Caesar-\/elven működő helyettesítő kódoló. 
+
+\label{doc-constructors}
+\Hypertarget{class_caesar_cipher_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_caesar_cipher_a567a7824c9db06df3e1aa2f50c49f2bd}\index{CaesarCipher@{CaesarCipher}!CaesarCipher@{CaesarCipher}}
+\index{CaesarCipher@{CaesarCipher}!CaesarCipher@{CaesarCipher}}
+\doxysubsubsection{\texorpdfstring{CaesarCipher()}{CaesarCipher()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_caesar_cipher_a567a7824c9db06df3e1aa2f50c49f2bd} 
+Caesar\+Cipher::\+\+Caesar\+Cipher (\begin{DoxyParamCaption}\item[{int}]{shift}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor eltolás alapján. 
+\begin{DoxyParams}{Parameters}
+{\em shift} & az eltolás mértéke \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_caesar_cipher_a3d7d350fd6630d69138fcf0c7965594f}\index{CaesarCipher@{CaesarCipher}!CaesarCipher@{CaesarCipher}}
+\index{CaesarCipher@{CaesarCipher}!CaesarCipher@{CaesarCipher}}
+\doxysubsubsection{\texorpdfstring{CaesarCipher()}{CaesarCipher()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_caesar_cipher_a3d7d350fd6630d69138fcf0c7965594f} 
+Caesar\+Cipher::\+\+Caesar\+Cipher (\begin{DoxyParamCaption}\item[{const std::\+vector$<$ std::\+string $>$ \&}]{params}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor paraméterlistából. 
+\begin{DoxyParams}{Parameters}
+{\em params} & paraméterlista, ahol az első elem az eltolás \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_caesar_cipher_a376252c2347d454984c5acc9269f0eea}\index{CaesarCipher@{CaesarCipher}!````~CaesarCipher@{\texorpdfstring{$\sim$}{\string~}CaesarCipher}}
+\index{````~CaesarCipher@{\texorpdfstring{$\sim$}{\string~}CaesarCipher}!CaesarCipher@{CaesarCipher}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CaesarCipher()}{\string~CaesarCipher()}}
+{\footnotesize\ttfamily \label{class_caesar_cipher_a376252c2347d454984c5acc9269f0eea} 
+Caesar\+Cipher::\+\texorpdfstring{$\sim$}{\string~}\+Caesar\+Cipher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+Alap destruktor. 
+
+\label{doc-func-members}
+\Hypertarget{class_caesar_cipher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_caesar_cipher_a78acb81007f66d402a9b0ef7e9e77a9f}\index{CaesarCipher@{CaesarCipher}!clone@{clone}}
+\index{clone@{clone}!CaesarCipher@{CaesarCipher}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_caesar_cipher_a78acb81007f66d402a9b0ef7e9e77a9f} 
+\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*} Caesar\+Cipher::\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Létrehoz egy dinamikus másolatot. \begin{DoxyReturn}{Returns}
+a létrehozott másolat pointere 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_cipher_a37e90f5d7bb41625092bdbe7fb9fb984}{Cipher}}.
+
+\Hypertarget{class_caesar_cipher_a6131bcafaf34c76baa9e5f65d8d7fc65}\index{CaesarCipher@{CaesarCipher}!decode@{decode}}
+\index{decode@{decode}!CaesarCipher@{CaesarCipher}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{class_caesar_cipher_a6131bcafaf34c76baa9e5f65d8d7fc65} 
+std::\+string Caesar\+Cipher::\+decode (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{ciphertext}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Visszafejti a kapott titkosított szöveget. 
+\begin{DoxyParams}{Parameters}
+{\em ciphertext} & titkosított üzenet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+megfejtett nyílt szöveg 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_cipher_aa913861387fb3d04f587d970c3709351}{Cipher}}.
+
+\Hypertarget{class_caesar_cipher_a451fcb48722e5b8e88c132c8e8453fb1}\index{CaesarCipher@{CaesarCipher}!encode@{encode}}
+\index{encode@{encode}!CaesarCipher@{CaesarCipher}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{class_caesar_cipher_a451fcb48722e5b8e88c132c8e8453fb1} 
+std::\+string Caesar\+Cipher::\+encode (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Titkosítja a kapott üzenetet. 
+\begin{DoxyParams}{Parameters}
+{\em message} & titkosítandó üzenet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+titkosított szöveg 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_cipher_add6ce24fa5b6f847e379d355384f8d73}{Cipher}}.
+
+\Hypertarget{class_caesar_cipher_ab4f0d5b5c5d2d13bbfe3459d38c0d514}\index{CaesarCipher@{CaesarCipher}!getCipherString@{getCipherString}}
+\index{getCipherString@{getCipherString}!CaesarCipher@{CaesarCipher}}
+\doxysubsubsection{\texorpdfstring{getCipherString()}{getCipherString()}}
+{\footnotesize\ttfamily \label{class_caesar_cipher_ab4f0d5b5c5d2d13bbfe3459d38c0d514} 
+const std::\+string Caesar\+Cipher::\+get\+Cipher\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Visszaadja a kódoló szöveges leírását. \begin{DoxyReturn}{Returns}
+a kódoló neve és paraméterei 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_cipher_ad5aa2a4287ae32c023a78a77587690d0}{Cipher}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Caesar\+Cipher.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\doxysection{Message\+File Class Reference}
+\hypertarget{class_message_file}{}\label{class_message_file}\index{MessageFile@{MessageFile}}
+
+
+{\ttfamily \+\#include $<$Message\+File.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_message_file_a0c4990ecd89bf7e04b6a363239b189e1}{Message\+File}} ()=default
+\item 
+\doxymbox{\hyperlink{class_message_file_ac543936367cafa0cea4cf6bb8315ccb6}{\texorpdfstring{$\sim$}{\string~}\+Message\+File}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std::\+string \doxymbox{\hyperlink{class_message_file_a09381a46360da1036dbfe01fdb825140}{load\+File}} (const std::\+string \&file\+\_\+name)
+\item 
+static void \doxymbox{\hyperlink{class_message_file_a587a74fd87d1ce78b2446ef85988afcd}{save\+To\+File}} (const std::\+string \&message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Üzenetfájlok beolvasását és mentését végző segédosztály. 
+
+\label{doc-constructors}
+\Hypertarget{class_message_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_message_file_a0c4990ecd89bf7e04b6a363239b189e1}\index{MessageFile@{MessageFile}!MessageFile@{MessageFile}}
+\index{MessageFile@{MessageFile}!MessageFile@{MessageFile}}
+\doxysubsubsection{\texorpdfstring{MessageFile()}{MessageFile()}}
+{\footnotesize\ttfamily \label{class_message_file_a0c4990ecd89bf7e04b6a363239b189e1} 
+Message\+File::\+\+Message\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Alap konstruktor. \Hypertarget{class_message_file_ac543936367cafa0cea4cf6bb8315ccb6}\index{MessageFile@{MessageFile}!````~MessageFile@{\texorpdfstring{$\sim$}{\string~}MessageFile}}
+\index{````~MessageFile@{\texorpdfstring{$\sim$}{\string~}MessageFile}!MessageFile@{MessageFile}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MessageFile()}{\string~MessageFile()}}
+{\footnotesize\ttfamily \label{class_message_file_ac543936367cafa0cea4cf6bb8315ccb6} 
+Message\+File::\+\texorpdfstring{$\sim$}{\string~}\+Message\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Alap destruktor. 
+
+\label{doc-func-members}
+\Hypertarget{class_message_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_message_file_a09381a46360da1036dbfe01fdb825140}\index{MessageFile@{MessageFile}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!MessageFile@{MessageFile}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily \label{class_message_file_a09381a46360da1036dbfe01fdb825140} 
+std::\+string Message\+File::\+load\+File (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{file\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Beolvassa egy fájl teljes tartalmát. 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & a beolvasandó fájl neve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fájl teljes szöveges tartalma 
+\end{DoxyReturn}
+\Hypertarget{class_message_file_a587a74fd87d1ce78b2446ef85988afcd}\index{MessageFile@{MessageFile}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!MessageFile@{MessageFile}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily \label{class_message_file_a587a74fd87d1ce78b2446ef85988afcd} 
+void Message\+File::\+save\+To\+File (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Elmenti a kapott üzenetet az alapértelmezett kimeneti fájlba. 
+\begin{DoxyParams}{Parameters}
+{\em message} & a kimentendő üzenet \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Message\+File.\+h\end{DoxyCompactItemize}

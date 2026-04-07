@@ -1,0 +1,77 @@
+\doxysection{Cipher\+File Class Reference}
+\hypertarget{class_cipher_file}{}\label{class_cipher_file}\index{CipherFile@{CipherFile}}
+
+
+{\ttfamily \+\#include $<$Cipher\+File.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_cipher_file_a6c4c8a69495475daa7b52cdd999df765}{Cipher\+File}} ()=default
+\item 
+\doxymbox{\hyperlink{class_cipher_file_ac96e5137e1fe06d4f1a11377e7195ef6}{\texorpdfstring{$\sim$}{\string~}\+Cipher\+File}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_cipher_file_a9cbd065db57bd324a63128831bc0cd27}{load\+File}} (const std::\+string \&file\+\_\+name)
+\item 
+static void \doxymbox{\hyperlink{class_cipher_file_ab90663c59084e8ce2a785d022da96946}{save\+To\+File}} (const std::\+string \&file\+\_\+name, \doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \texorpdfstring{$\ast$}{*}cipher\+\_\+list)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kódoló konfigurációkat fájlba mentő és fájlból betöltő segédosztály. 
+
+\label{doc-constructors}
+\Hypertarget{class_cipher_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cipher_file_a6c4c8a69495475daa7b52cdd999df765}\index{CipherFile@{CipherFile}!CipherFile@{CipherFile}}
+\index{CipherFile@{CipherFile}!CipherFile@{CipherFile}}
+\doxysubsubsection{\texorpdfstring{CipherFile()}{CipherFile()}}
+{\footnotesize\ttfamily \label{class_cipher_file_a6c4c8a69495475daa7b52cdd999df765} 
+Cipher\+File::\+\+Cipher\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Alap konstruktor. \Hypertarget{class_cipher_file_ac96e5137e1fe06d4f1a11377e7195ef6}\index{CipherFile@{CipherFile}!````~CipherFile@{\texorpdfstring{$\sim$}{\string~}CipherFile}}
+\index{````~CipherFile@{\texorpdfstring{$\sim$}{\string~}CipherFile}!CipherFile@{CipherFile}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CipherFile()}{\string~CipherFile()}}
+{\footnotesize\ttfamily \label{class_cipher_file_ac96e5137e1fe06d4f1a11377e7195ef6} 
+Cipher\+File::\+\texorpdfstring{$\sim$}{\string~}\+Cipher\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Alap destruktor. 
+
+\label{doc-func-members}
+\Hypertarget{class_cipher_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cipher_file_a9cbd065db57bd324a63128831bc0cd27}\index{CipherFile@{CipherFile}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!CipherFile@{CipherFile}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily \label{class_cipher_file_a9cbd065db57bd324a63128831bc0cd27} 
+\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \texorpdfstring{$\ast$}{*} Cipher\+File::\+load\+File (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{file\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Betölti a kódolólistát egy konfigurációs fájlból. 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & a beolvasandó fájl neve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dinamikusan foglalt kódolólista pointere 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_file_ab90663c59084e8ce2a785d022da96946}\index{CipherFile@{CipherFile}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!CipherFile@{CipherFile}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily \label{class_cipher_file_ab90663c59084e8ce2a785d022da96946} 
+void Cipher\+File::\+save\+To\+File (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{file\+\_\+name}{, }\item[{\doxymbox{\hyperlink{class_cipher_list}{Cipher\+List}} \texorpdfstring{$\ast$}{*}}]{cipher\+\_\+list}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Elmenti a kódolólistát a megadott fájlba. 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & a célfájl neve \\
+\hline
+{\em cipher\+\_\+list} & a mentendő kódolólista \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Cipher\+File.\+h\end{DoxyCompactItemize}

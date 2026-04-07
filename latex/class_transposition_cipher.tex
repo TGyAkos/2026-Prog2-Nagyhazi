@@ -1,0 +1,142 @@
+\doxysection{Transposition\+Cipher Class Reference}
+\hypertarget{class_transposition_cipher}{}\label{class_transposition_cipher}\index{TranspositionCipher@{TranspositionCipher}}
+
+
+{\ttfamily \+\#include $<$Transposition\+Cipher.\+h$>$}
+
+Inheritance diagram for Transposition\+Cipher:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transposition_cipher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_transposition_cipher_a210aa067fd6585b5a7646bd6ecbc0447}{Transposition\+Cipher}} (size\+\_\+t size)
+\item 
+\doxymbox{\hyperlink{class_transposition_cipher_a23f8c6ec731fd730a8c345c16176a933}{Transposition\+Cipher}} (const std::\+vector$<$ std::\+string $>$ \&params)
+\item 
+const std::\+string \doxymbox{\hyperlink{class_transposition_cipher_aaad752c724f4ebde9eb1710fab1dbd4e}{get\+Cipher\+String}} () const override
+\item 
+std::\+string \doxymbox{\hyperlink{class_transposition_cipher_a29f7fd7c419efd1bbad4f2046b6c3432}{encode}} (const std::\+string \&message) override
+\item 
+std::\+string \doxymbox{\hyperlink{class_transposition_cipher_a4bd255aa43146ec0f39c2e06454cffab}{decode}} (const std::\+string \&ciphertext) override
+\item 
+\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_transposition_cipher_ad8894886503ce254cff89a1d5e02be0b}{clone}} () const override
+\item 
+\doxymbox{\hyperlink{class_transposition_cipher_a562d4c9b084b627aad9fcae9b319e454}{\texorpdfstring{$\sim$}{\string~}\+Transposition\+Cipher}} () override=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_cipher}{Cipher}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_cipher_a06de38ffc1b3f5217251b57627d46b01}{\texorpdfstring{$\sim$}{\string~}\+Cipher}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mátrixos felcserélésen alapuló transzpozíciós kódoló. 
+
+\label{doc-constructors}
+\Hypertarget{class_transposition_cipher_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_transposition_cipher_a210aa067fd6585b5a7646bd6ecbc0447}\index{TranspositionCipher@{TranspositionCipher}!TranspositionCipher@{TranspositionCipher}}
+\index{TranspositionCipher@{TranspositionCipher}!TranspositionCipher@{TranspositionCipher}}
+\doxysubsubsection{\texorpdfstring{TranspositionCipher()}{TranspositionCipher()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_transposition_cipher_a210aa067fd6585b5a7646bd6ecbc0447} 
+Transposition\+Cipher::\+\+Transposition\+Cipher (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor a mátrix méretével. 
+\begin{DoxyParams}{Parameters}
+{\em size} & a mátrix oldalmérete \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_transposition_cipher_a23f8c6ec731fd730a8c345c16176a933}\index{TranspositionCipher@{TranspositionCipher}!TranspositionCipher@{TranspositionCipher}}
+\index{TranspositionCipher@{TranspositionCipher}!TranspositionCipher@{TranspositionCipher}}
+\doxysubsubsection{\texorpdfstring{TranspositionCipher()}{TranspositionCipher()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_transposition_cipher_a23f8c6ec731fd730a8c345c16176a933} 
+Transposition\+Cipher::\+\+Transposition\+Cipher (\begin{DoxyParamCaption}\item[{const std::\+vector$<$ std::\+string $>$ \&}]{params}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor paraméterlistából. 
+\begin{DoxyParams}{Parameters}
+{\em params} & paraméterlista, ahol az első elem a méret \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_transposition_cipher_a562d4c9b084b627aad9fcae9b319e454}\index{TranspositionCipher@{TranspositionCipher}!````~TranspositionCipher@{\texorpdfstring{$\sim$}{\string~}TranspositionCipher}}
+\index{````~TranspositionCipher@{\texorpdfstring{$\sim$}{\string~}TranspositionCipher}!TranspositionCipher@{TranspositionCipher}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TranspositionCipher()}{\string~TranspositionCipher()}}
+{\footnotesize\ttfamily \label{class_transposition_cipher_a562d4c9b084b627aad9fcae9b319e454} 
+Transposition\+Cipher::\+\texorpdfstring{$\sim$}{\string~}\+Transposition\+Cipher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+Alap destruktor. 
+
+\label{doc-func-members}
+\Hypertarget{class_transposition_cipher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_transposition_cipher_ad8894886503ce254cff89a1d5e02be0b}\index{TranspositionCipher@{TranspositionCipher}!clone@{clone}}
+\index{clone@{clone}!TranspositionCipher@{TranspositionCipher}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_transposition_cipher_ad8894886503ce254cff89a1d5e02be0b} 
+\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*} Transposition\+Cipher::\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Létrehoz egy dinamikus másolatot. \begin{DoxyReturn}{Returns}
+a létrehozott másolat pointere 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_cipher_a37e90f5d7bb41625092bdbe7fb9fb984}{Cipher}}.
+
+\Hypertarget{class_transposition_cipher_a4bd255aa43146ec0f39c2e06454cffab}\index{TranspositionCipher@{TranspositionCipher}!decode@{decode}}
+\index{decode@{decode}!TranspositionCipher@{TranspositionCipher}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{class_transposition_cipher_a4bd255aa43146ec0f39c2e06454cffab} 
+std::\+string Transposition\+Cipher::\+decode (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{ciphertext}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Visszafejti a transzpozícióval titkosított szöveget. 
+\begin{DoxyParams}{Parameters}
+{\em ciphertext} & titkosított üzenet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+megfejtett nyílt szöveg 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_cipher_aa913861387fb3d04f587d970c3709351}{Cipher}}.
+
+\Hypertarget{class_transposition_cipher_a29f7fd7c419efd1bbad4f2046b6c3432}\index{TranspositionCipher@{TranspositionCipher}!encode@{encode}}
+\index{encode@{encode}!TranspositionCipher@{TranspositionCipher}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{class_transposition_cipher_a29f7fd7c419efd1bbad4f2046b6c3432} 
+std::\+string Transposition\+Cipher::\+encode (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Titkosítja a kapott üzenetet transzpozícióval. 
+\begin{DoxyParams}{Parameters}
+{\em message} & titkosítandó üzenet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+titkosított szöveg 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_cipher_add6ce24fa5b6f847e379d355384f8d73}{Cipher}}.
+
+\Hypertarget{class_transposition_cipher_aaad752c724f4ebde9eb1710fab1dbd4e}\index{TranspositionCipher@{TranspositionCipher}!getCipherString@{getCipherString}}
+\index{getCipherString@{getCipherString}!TranspositionCipher@{TranspositionCipher}}
+\doxysubsubsection{\texorpdfstring{getCipherString()}{getCipherString()}}
+{\footnotesize\ttfamily \label{class_transposition_cipher_aaad752c724f4ebde9eb1710fab1dbd4e} 
+const std::\+string Transposition\+Cipher::\+get\+Cipher\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Visszaadja a kódoló szöveges leírását. \begin{DoxyReturn}{Returns}
+a kódoló neve és paraméterei 
+\end{DoxyReturn}
+
+
+Implements \doxymbox{\hyperlink{class_cipher_ad5aa2a4287ae32c023a78a77587690d0}{Cipher}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Transposition\+Cipher.\+h\end{DoxyCompactItemize}

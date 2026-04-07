@@ -1,0 +1,33 @@
+\doxysection{My\+Cipher.\+h}
+\hypertarget{_my_cipher_8h_source}{}\label{_my_cipher_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ user\ on\ 06/04/2026.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ TITKOSITO\_MYCIPHER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ TITKOSITO\_MYCIPHER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Cipher.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Registrar.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_my_cipher_a04a1f61a7fba610535bc9f294cee9a79}{MyCipher}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_cipher}{Cipher}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ key;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ offset;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ validate\_key(\textcolor{keyword}{const}\ std::string\ \&key);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ validate\_text(\textcolor{keyword}{const}\ std::string\ \&text);}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{class_my_cipher_a04a1f61a7fba610535bc9f294cee9a79}{MyCipher}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ key)\ :\ key(key),\ offset(0)\ \{\}}
+\DoxyCodeLine{00041\ \ \ \ \ \doxymbox{\hyperlink{class_my_cipher_ae460eefd186b8a8092639b70aa52ee8e}{MyCipher}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ key,\ \textcolor{keywordtype}{int}\ offset)\ :\ key(key),\ offset(offset)\ \{\}}
+\DoxyCodeLine{00046\ \ \ \ \ \doxymbox{\hyperlink{class_my_cipher_ad006b311f41d0d2370672f4607ab8dda}{MyCipher}}(\textcolor{keyword}{const}\ std::vector<std::string>\&\ params)\ :\ key(params[0]),\ offset(params.size()\ >\ 1\ ?\ stoi(params[1])\ :\ 0)\ \{\}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \doxymbox{\hyperlink{class_my_cipher_af0a0da166d72be1673feca132719711f}{getCipherString}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00056\ \ \ \ \ \doxymbox{\hyperlink{class_cipher}{Cipher}}\ *\doxymbox{\hyperlink{class_my_cipher_a90a8be4a27c2c74dd2c6be34ddd47eec}{clone}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00062\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_my_cipher_a536d705cb2cf373e98528e978d65c136}{encode}}(\textcolor{keyword}{const}\ std::string\ \&message)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00068\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_my_cipher_a794831c06035c4767a82df3529886695}{decode}}(\textcolor{keyword}{const}\ std::string\ \&ciphertext)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00072\ \ \ \ \ \doxymbox{\hyperlink{class_my_cipher_ad6e9f3c13c94fd7e2dcec43a08520398}{\string~MyCipher}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//TITKOSITO\_MYCIPHER\_H}}
+
+\end{DoxyCode}

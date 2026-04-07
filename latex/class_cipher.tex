@@ -1,0 +1,111 @@
+\doxysection{Cipher Class Reference}
+\hypertarget{class_cipher}{}\label{class_cipher}\index{Cipher@{Cipher}}
+
+
+{\ttfamily \+\#include $<$Cipher.\+h$>$}
+
+Inheritance diagram for Cipher:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cipher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::\+string \doxymbox{\hyperlink{class_cipher_add6ce24fa5b6f847e379d355384f8d73}{encode}} (const std::\+string \&message)=0
+\item 
+virtual std::\+string \doxymbox{\hyperlink{class_cipher_aa913861387fb3d04f587d970c3709351}{decode}} (const std::\+string \&ciphertext)=0
+\item 
+virtual \doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_cipher_a37e90f5d7bb41625092bdbe7fb9fb984}{clone}} () const =0
+\item 
+virtual const std::\+string \doxymbox{\hyperlink{class_cipher_ad5aa2a4287ae32c023a78a77587690d0}{get\+Cipher\+String}} () const =0
+\item 
+virtual \doxymbox{\hyperlink{class_cipher_a06de38ffc1b3f5217251b57627d46b01}{\texorpdfstring{$\sim$}{\string~}\+Cipher}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Absztrakt ősosztály, amely a kódolók közös interfészét definiálja. 
+
+\label{doc-constructors}
+\Hypertarget{class_cipher_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cipher_a06de38ffc1b3f5217251b57627d46b01}\index{Cipher@{Cipher}!````~Cipher@{\texorpdfstring{$\sim$}{\string~}Cipher}}
+\index{````~Cipher@{\texorpdfstring{$\sim$}{\string~}Cipher}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Cipher()}{\string~Cipher()}}
+{\footnotesize\ttfamily \label{class_cipher_a06de38ffc1b3f5217251b57627d46b01} 
+virtual Cipher::\+\texorpdfstring{$\sim$}{\string~}\+Cipher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Alap destruktor 
+
+\label{doc-func-members}
+\Hypertarget{class_cipher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cipher_a37e90f5d7bb41625092bdbe7fb9fb984}\index{Cipher@{Cipher}!clone@{clone}}
+\index{clone@{clone}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_cipher_a37e90f5d7bb41625092bdbe7fb9fb984} 
+virtual \doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*} Cipher::\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Létrehoz egy másolatot dinamikusan \begin{DoxyReturn}{Returns}
+a létrehozott objektumra mutató pointer 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_caesar_cipher_a78acb81007f66d402a9b0ef7e9e77a9f}{Caesar\+Cipher}}, \doxymbox{\hyperlink{class_my_cipher_a90a8be4a27c2c74dd2c6be34ddd47eec}{My\+Cipher}}, and \doxymbox{\hyperlink{class_transposition_cipher_ad8894886503ce254cff89a1d5e02be0b}{Transposition\+Cipher}}.
+
+\Hypertarget{class_cipher_aa913861387fb3d04f587d970c3709351}\index{Cipher@{Cipher}!decode@{decode}}
+\index{decode@{decode}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{class_cipher_aa913861387fb3d04f587d970c3709351} 
+virtual std::\+string Cipher::\+decode (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{ciphertext}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Dekódolja a kapott stringet 
+\begin{DoxyParams}{Parameters}
+{\em ciphertext} & titkosított üzenet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a megfejtett nyílt szöveg 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_caesar_cipher_a6131bcafaf34c76baa9e5f65d8d7fc65}{Caesar\+Cipher}}, \doxymbox{\hyperlink{class_my_cipher_a794831c06035c4767a82df3529886695}{My\+Cipher}}, and \doxymbox{\hyperlink{class_transposition_cipher_a4bd255aa43146ec0f39c2e06454cffab}{Transposition\+Cipher}}.
+
+\Hypertarget{class_cipher_add6ce24fa5b6f847e379d355384f8d73}\index{Cipher@{Cipher}!encode@{encode}}
+\index{encode@{encode}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{class_cipher_add6ce24fa5b6f847e379d355384f8d73} 
+virtual std::\+string Cipher::\+encode (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Titkosítja a kapott stringet 
+\begin{DoxyParams}{Parameters}
+{\em message} & titkosítandó üzenet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a message szöveg titkosított változata 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_caesar_cipher_a451fcb48722e5b8e88c132c8e8453fb1}{Caesar\+Cipher}}, \doxymbox{\hyperlink{class_my_cipher_a536d705cb2cf373e98528e978d65c136}{My\+Cipher}}, and \doxymbox{\hyperlink{class_transposition_cipher_a29f7fd7c419efd1bbad4f2046b6c3432}{Transposition\+Cipher}}.
+
+\Hypertarget{class_cipher_ad5aa2a4287ae32c023a78a77587690d0}\index{Cipher@{Cipher}!getCipherString@{getCipherString}}
+\index{getCipherString@{getCipherString}!Cipher@{Cipher}}
+\doxysubsubsection{\texorpdfstring{getCipherString()}{getCipherString()}}
+{\footnotesize\ttfamily \label{class_cipher_ad5aa2a4287ae32c023a78a77587690d0} 
+virtual const std::\+string Cipher::\+get\+Cipher\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Visszaadja a kódolás nevét és paramétereit egy stringben, ami alapján újra létre lehet hozni a kódolót \begin{DoxyReturn}{Returns}
+a létrehozott szöveg 
+\end{DoxyReturn}
+
+
+Implemented in \doxymbox{\hyperlink{class_caesar_cipher_ab4f0d5b5c5d2d13bbfe3459d38c0d514}{Caesar\+Cipher}}, \doxymbox{\hyperlink{class_my_cipher_af0a0da166d72be1673feca132719711f}{My\+Cipher}}, and \doxymbox{\hyperlink{class_transposition_cipher_aaad752c724f4ebde9eb1710fab1dbd4e}{Transposition\+Cipher}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Cipher.\+h\end{DoxyCompactItemize}

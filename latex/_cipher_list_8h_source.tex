@@ -1,0 +1,44 @@
+\doxysection{Cipher\+List.\+h}
+\hypertarget{_cipher_list_8h_source}{}\label{_cipher_list_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ user\ on\ 06/04/2026.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ TITKOSITO\_CIPHERLIST\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ TITKOSITO\_CIPHERLIST\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Cipher.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ std::vector<Cipher\ *>\ ciphers;}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{class_cipher_list_aed4b79b06ac514d552420ec72337f44d}{iterator}}\ =\ std::vector<Cipher\ *>::iterator;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\_iterator}}\ =\ std::vector<Cipher\ *>::const\_iterator;}
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a1def5b70a95af8ab03c1a5d3da1d5b87}{CipherList}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}\ \&other);}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}\ \&\doxymbox{\hyperlink{class_cipher_list_afeb98aa6283de129e7d7af440ba613fb}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}\ \&other);}
+\DoxyCodeLine{00044\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}\ \doxymbox{\hyperlink{class_cipher_list_abc331dd7ba3798a7ff5986fb4ab606eb}{operator+}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}\ \&\doxymbox{\hyperlink{class_cipher_list_a19cac3d65367e3ead5b8fccc4979fc8d}{operator+=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}\ \&other);}
+\DoxyCodeLine{00056\ \ \ \ \ \doxymbox{\hyperlink{class_cipher}{Cipher}}\ \&\doxymbox{\hyperlink{class_cipher_list_af604cecabcda806bca59067e6f25bcb3}{operator[]}}(\textcolor{keywordtype}{size\_t}\ idx);}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cipher}{Cipher}}\ \&\doxymbox{\hyperlink{class_cipher_list_ae4cde6810a90bfb833fa0def3f752d46}{operator[]}}(\textcolor{keywordtype}{size\_t}\ idx)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cipher_list_a43a50611a0dac3b3b8039220ed7c7e22}{addCipher}}(\doxymbox{\hyperlink{class_cipher}{Cipher}}\ *cipher);}
+\DoxyCodeLine{00073\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_cipher_list_ab144cd16395c997155fa197d0186862f}{encode}}(\textcolor{keyword}{const}\ std::string\ \&message);}
+\DoxyCodeLine{00079\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_cipher_list_a98e2e0c620b5cd7e375b84193fb8499f}{decode}}(\textcolor{keyword}{const}\ std::string\ \&ciphertext);}
+\DoxyCodeLine{00084\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a283e7058e887a39f5fc22011d286206d}{CipherList}}\ *\doxymbox{\hyperlink{class_cipher_list_ae8e420376ec825631d686cce37029d3b}{clone}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00089\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_aed4b79b06ac514d552420ec72337f44d}{iterator}}\ \doxymbox{\hyperlink{class_cipher_list_a82931224abda9c05491d17cc4e56342e}{begin}}();}
+\DoxyCodeLine{00094\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_aed4b79b06ac514d552420ec72337f44d}{iterator}}\ \doxymbox{\hyperlink{class_cipher_list_a3f7a0124a89e7e3ce546df3d4dc52435}{end}}();}
+\DoxyCodeLine{00099\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\_iterator}}\ \doxymbox{\hyperlink{class_cipher_list_a2dabfb0a2f99f60010f01bd7304da167}{begin}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00104\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\_iterator}}\ \doxymbox{\hyperlink{class_cipher_list_a17dc992c45086d3fbc9e7e0cfc5ca40b}{end}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\_iterator}}\ \doxymbox{\hyperlink{class_cipher_list_a0ddfa8b65ad783cf6d28d89f8f521ab5}{cbegin}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00114\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a04b83fabefddd4a6aeafd002a59e6271}{const\_iterator}}\ \doxymbox{\hyperlink{class_cipher_list_aad81e245be66e26a154bd15c75838b55}{cend}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00118\ \ \ \ \ \doxymbox{\hyperlink{class_cipher_list_a304d2fb9e0582bb1409406b3195a6244}{\string~CipherList}}();}
+\DoxyCodeLine{00119\ \};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TITKOSITO\_CIPHERLIST\_H}}
+
+\end{DoxyCode}

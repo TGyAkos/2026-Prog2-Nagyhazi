@@ -1,0 +1,119 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Caesar\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cipher Class Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Constructor \& Destructor Documentation}{8}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}CaesarCipher()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{8}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}CaesarCipher()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{8}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}$\sim $CaesarCipher()}{8}{subsubsection.4.1.2.3}%
+\contentsline {subsection}{\numberline {4.1.3}Member Function Documentation}{8}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}clone()}{8}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}decode()}{9}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}encode()}{9}{subsubsection.4.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.4}getCipherString()}{9}{subsubsection.4.1.3.4}%
+\contentsline {section}{\numberline {4.2}Cipher Class Reference}{10}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{10}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{10}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}$\sim $Cipher()}{10}{subsubsection.4.2.2.1}%
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{10}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}clone()}{10}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}decode()}{11}{subsubsection.4.2.3.2}%
+\contentsline {subsubsection}{\numberline {4.2.3.3}encode()}{11}{subsubsection.4.2.3.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.4}getCipherString()}{11}{subsubsection.4.2.3.4}%
+\contentsline {section}{\numberline {4.3}Cipher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{12}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{12}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{12}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}$\sim $CipherFactory()}{12}{subsubsection.4.3.2.1}%
+\contentsline {subsection}{\numberline {4.3.3}Member Function Documentation}{12}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}cipherExists()}{12}{subsubsection.4.3.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.3.2}createCipher()}{13}{subsubsection.4.3.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3.3}getInstance()}{13}{subsubsection.4.3.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.4}registerCipher()}{13}{subsubsection.4.3.3.4}%
+\contentsline {section}{\numberline {4.4}Cipher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File Class Reference}{13}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{14}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{14}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}CipherFile()}{14}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}$\sim $CipherFile()}{14}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{14}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}loadFile()}{14}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}saveToFile()}{15}{subsubsection.4.4.3.2}%
+\contentsline {section}{\numberline {4.5}Cipher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List Class Reference}{15}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{16}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{16}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}CipherList()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{16}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}CipherList()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{16}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}$\sim $CipherList()}{16}{subsubsection.4.5.2.3}%
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{16}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}addCipher()}{16}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}begin()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{17}{subsubsection.4.5.3.2}%
+\contentsline {subsubsection}{\numberline {4.5.3.3}begin()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{17}{subsubsection.4.5.3.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.4}cbegin()}{17}{subsubsection.4.5.3.4}%
+\contentsline {subsubsection}{\numberline {4.5.3.5}cend()}{17}{subsubsection.4.5.3.5}%
+\contentsline {subsubsection}{\numberline {4.5.3.6}clone()}{17}{subsubsection.4.5.3.6}%
+\contentsline {subsubsection}{\numberline {4.5.3.7}decode()}{18}{subsubsection.4.5.3.7}%
+\contentsline {subsubsection}{\numberline {4.5.3.8}encode()}{18}{subsubsection.4.5.3.8}%
+\contentsline {subsubsection}{\numberline {4.5.3.9}end()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{18}{subsubsection.4.5.3.9}%
+\contentsline {subsubsection}{\numberline {4.5.3.10}end()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{18}{subsubsection.4.5.3.10}%
+\contentsline {subsubsection}{\numberline {4.5.3.11}operator+()}{19}{subsubsection.4.5.3.11}%
+\contentsline {subsubsection}{\numberline {4.5.3.12}operator+=()}{19}{subsubsection.4.5.3.12}%
+\contentsline {subsubsection}{\numberline {4.5.3.13}operator=()}{19}{subsubsection.4.5.3.13}%
+\contentsline {subsubsection}{\numberline {4.5.3.14}operator[]()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{20}{subsubsection.4.5.3.14}%
+\contentsline {subsubsection}{\numberline {4.5.3.15}operator[]()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{20}{subsubsection.4.5.3.15}%
+\contentsline {section}{\numberline {4.6}Message\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File Class Reference}{20}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{21}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{21}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}MessageFile()}{21}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}$\sim $MessageFile()}{21}{subsubsection.4.6.2.2}%
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{21}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}loadFile()}{21}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}saveToFile()}{22}{subsubsection.4.6.3.2}%
+\contentsline {section}{\numberline {4.7}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cipher Class Reference}{22}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{22}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{23}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}MyCipher()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{23}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}MyCipher()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{23}{subsubsection.4.7.2.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.3}MyCipher()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{23}{subsubsection.4.7.2.3}%
+\contentsline {subsubsection}{\numberline {4.7.2.4}$\sim $MyCipher()}{23}{subsubsection.4.7.2.4}%
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{24}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}clone()}{24}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}decode()}{24}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}encode()}{24}{subsubsection.4.7.3.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.4}getCipherString()}{25}{subsubsection.4.7.3.4}%
+\contentsline {section}{\numberline {4.8}Registrar$<$ T $>$ Struct Template Reference}{25}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{25}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{26}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}Registrar()}{26}{subsubsection.4.8.2.1}%
+\contentsline {section}{\numberline {4.9}String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Funcs Struct Reference}{26}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{26}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Member Function Documentation}{26}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}shift\_char()}{26}{subsubsection.4.9.2.1}%
+\contentsline {subsubsection}{\numberline {4.9.2.2}split()}{27}{subsubsection.4.9.2.2}%
+\contentsline {section}{\numberline {4.10}Transposition\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cipher Class Reference}{27}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{28}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{28}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}TranspositionCipher()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{28}{subsubsection.4.10.2.1}%
+\contentsline {subsubsection}{\numberline {4.10.2.2}TranspositionCipher()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{28}{subsubsection.4.10.2.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.3}$\sim $TranspositionCipher()}{28}{subsubsection.4.10.2.3}%
+\contentsline {subsection}{\numberline {4.10.3}Member Function Documentation}{28}{subsection.4.10.3}%
+\contentsline {subsubsection}{\numberline {4.10.3.1}clone()}{28}{subsubsection.4.10.3.1}%
+\contentsline {subsubsection}{\numberline {4.10.3.2}decode()}{29}{subsubsection.4.10.3.2}%
+\contentsline {subsubsection}{\numberline {4.10.3.3}encode()}{29}{subsubsection.4.10.3.3}%
+\contentsline {subsubsection}{\numberline {4.10.3.4}getCipherString()}{29}{subsubsection.4.10.3.4}%
+\contentsline {chapter}{\numberline {5}File Documentation}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Caesar\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cipher.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Cipher.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{31}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Cipher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{32}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Cipher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{32}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Cipher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{32}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Message\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{33}{section.5.6}%
+\contentsline {section}{\numberline {5.7}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cipher.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{33}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Registrar.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{34}{section.5.8}%
+\contentsline {section}{\numberline {5.9}String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Funcs.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{34}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Transposition\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cipher.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{34}{section.5.10}%
+\contentsline {chapter}{Index}{35}{section*.23}%

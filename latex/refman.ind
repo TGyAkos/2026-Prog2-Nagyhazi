@@ -1,0 +1,187 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}CaesarCipher}
+    \subitem {CaesarCipher}, \hyperpage{8}
+  \item {\texorpdfstring{$\sim$}{\string~}Cipher}
+    \subitem {Cipher}, \hyperpage{10}
+  \item {\texorpdfstring{$\sim$}{\string~}CipherFactory}
+    \subitem {CipherFactory}, \hyperpage{12}
+  \item {\texorpdfstring{$\sim$}{\string~}CipherFile}
+    \subitem {CipherFile}, \hyperpage{14}
+  \item {\texorpdfstring{$\sim$}{\string~}CipherList}
+    \subitem {CipherList}, \hyperpage{16}
+  \item {\texorpdfstring{$\sim$}{\string~}MessageFile}
+    \subitem {MessageFile}, \hyperpage{21}
+  \item {\texorpdfstring{$\sim$}{\string~}MyCipher}
+    \subitem {MyCipher}, \hyperpage{23}
+  \item {\texorpdfstring{$\sim$}{\string~}TranspositionCipher}
+    \subitem {TranspositionCipher}, \hyperpage{28}
+
+  \indexspace
+
+  \item {addCipher}
+    \subitem {CipherList}, \hyperpage{16}
+
+  \indexspace
+
+  \item {begin}
+    \subitem {CipherList}, \hyperpage{16, 17}
+
+  \indexspace
+
+  \item {CaesarCipher}, \hyperpage{7}
+    \subitem {\texorpdfstring{$\sim$}{\string~}CaesarCipher}, 
+		\hyperpage{8}
+    \subitem {CaesarCipher}, \hyperpage{8}
+    \subitem {clone}, \hyperpage{8}
+    \subitem {decode}, \hyperpage{8}
+    \subitem {encode}, \hyperpage{9}
+    \subitem {getCipherString}, \hyperpage{9}
+  \item {cbegin}
+    \subitem {CipherList}, \hyperpage{17}
+  \item {cend}
+    \subitem {CipherList}, \hyperpage{17}
+  \item {Cipher}, \hyperpage{10}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Cipher}, \hyperpage{10}
+    \subitem {clone}, \hyperpage{10}
+    \subitem {decode}, \hyperpage{10}
+    \subitem {encode}, \hyperpage{11}
+    \subitem {getCipherString}, \hyperpage{11}
+  \item {cipherExists}
+    \subitem {CipherFactory}, \hyperpage{12}
+  \item {CipherFactory}, \hyperpage{12}
+    \subitem {\texorpdfstring{$\sim$}{\string~}CipherFactory}, 
+		\hyperpage{12}
+    \subitem {cipherExists}, \hyperpage{12}
+    \subitem {createCipher}, \hyperpage{12}
+    \subitem {getInstance}, \hyperpage{13}
+    \subitem {registerCipher}, \hyperpage{13}
+  \item {CipherFile}, \hyperpage{13}
+    \subitem {\texorpdfstring{$\sim$}{\string~}CipherFile}, 
+		\hyperpage{14}
+    \subitem {CipherFile}, \hyperpage{14}
+    \subitem {loadFile}, \hyperpage{14}
+    \subitem {saveToFile}, \hyperpage{14}
+  \item {CipherList}, \hyperpage{15}
+    \subitem {\texorpdfstring{$\sim$}{\string~}CipherList}, 
+		\hyperpage{16}
+    \subitem {addCipher}, \hyperpage{16}
+    \subitem {begin}, \hyperpage{16, 17}
+    \subitem {cbegin}, \hyperpage{17}
+    \subitem {cend}, \hyperpage{17}
+    \subitem {CipherList}, \hyperpage{16}
+    \subitem {clone}, \hyperpage{17}
+    \subitem {decode}, \hyperpage{17}
+    \subitem {encode}, \hyperpage{18}
+    \subitem {end}, \hyperpage{18}
+    \subitem {operator+}, \hyperpage{18}
+    \subitem {operator+=}, \hyperpage{19}
+    \subitem {operator=}, \hyperpage{19}
+    \subitem {operator[]}, \hyperpage{19, 20}
+  \item {clone}
+    \subitem {CaesarCipher}, \hyperpage{8}
+    \subitem {Cipher}, \hyperpage{10}
+    \subitem {CipherList}, \hyperpage{17}
+    \subitem {MyCipher}, \hyperpage{24}
+    \subitem {TranspositionCipher}, \hyperpage{28}
+  \item {createCipher}
+    \subitem {CipherFactory}, \hyperpage{12}
+
+  \indexspace
+
+  \item {decode}
+    \subitem {CaesarCipher}, \hyperpage{8}
+    \subitem {Cipher}, \hyperpage{10}
+    \subitem {CipherList}, \hyperpage{17}
+    \subitem {MyCipher}, \hyperpage{24}
+    \subitem {TranspositionCipher}, \hyperpage{28}
+
+  \indexspace
+
+  \item {encode}
+    \subitem {CaesarCipher}, \hyperpage{9}
+    \subitem {Cipher}, \hyperpage{11}
+    \subitem {CipherList}, \hyperpage{18}
+    \subitem {MyCipher}, \hyperpage{24}
+    \subitem {TranspositionCipher}, \hyperpage{29}
+  \item {end}
+    \subitem {CipherList}, \hyperpage{18}
+
+  \indexspace
+
+  \item {getCipherString}
+    \subitem {CaesarCipher}, \hyperpage{9}
+    \subitem {Cipher}, \hyperpage{11}
+    \subitem {MyCipher}, \hyperpage{24}
+    \subitem {TranspositionCipher}, \hyperpage{29}
+  \item {getInstance}
+    \subitem {CipherFactory}, \hyperpage{13}
+
+  \indexspace
+
+  \item {loadFile}
+    \subitem {CipherFile}, \hyperpage{14}
+    \subitem {MessageFile}, \hyperpage{21}
+
+  \indexspace
+
+  \item {MessageFile}, \hyperpage{20}
+    \subitem {\texorpdfstring{$\sim$}{\string~}MessageFile}, 
+		\hyperpage{21}
+    \subitem {loadFile}, \hyperpage{21}
+    \subitem {MessageFile}, \hyperpage{21}
+    \subitem {saveToFile}, \hyperpage{21}
+  \item {MyCipher}, \hyperpage{22}
+    \subitem {\texorpdfstring{$\sim$}{\string~}MyCipher}, 
+		\hyperpage{23}
+    \subitem {clone}, \hyperpage{24}
+    \subitem {decode}, \hyperpage{24}
+    \subitem {encode}, \hyperpage{24}
+    \subitem {getCipherString}, \hyperpage{24}
+    \subitem {MyCipher}, \hyperpage{23}
+
+  \indexspace
+
+  \item {operator+}
+    \subitem {CipherList}, \hyperpage{18}
+  \item {operator+=}
+    \subitem {CipherList}, \hyperpage{19}
+  \item {operator=}
+    \subitem {CipherList}, \hyperpage{19}
+  \item {operator[]}
+    \subitem {CipherList}, \hyperpage{19, 20}
+
+  \indexspace
+
+  \item {registerCipher}
+    \subitem {CipherFactory}, \hyperpage{13}
+  \item {Registrar}
+    \subitem {Registrar$<$ T $>$}, \hyperpage{26}
+  \item {Registrar$<$ T $>$}, \hyperpage{25}
+    \subitem {Registrar}, \hyperpage{26}
+
+  \indexspace
+
+  \item {saveToFile}
+    \subitem {CipherFile}, \hyperpage{14}
+    \subitem {MessageFile}, \hyperpage{21}
+  \item {shift\_char}
+    \subitem {StringFuncs}, \hyperpage{26}
+  \item {split}
+    \subitem {StringFuncs}, \hyperpage{26}
+  \item {StringFuncs}, \hyperpage{26}
+    \subitem {shift\_char}, \hyperpage{26}
+    \subitem {split}, \hyperpage{26}
+
+  \indexspace
+
+  \item {TranspositionCipher}, \hyperpage{27}
+    \subitem {\texorpdfstring{$\sim$}{\string~}TranspositionCipher}, 
+		\hyperpage{28}
+    \subitem {clone}, \hyperpage{28}
+    \subitem {decode}, \hyperpage{28}
+    \subitem {encode}, \hyperpage{29}
+    \subitem {getCipherString}, \hyperpage{29}
+    \subitem {TranspositionCipher}, \hyperpage{28}
+
+\end{theindex}

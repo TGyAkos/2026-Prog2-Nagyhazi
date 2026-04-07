@@ -1,0 +1,96 @@
+\doxysection{Cipher\+Factory Class Reference}
+\hypertarget{class_cipher_factory}{}\label{class_cipher_factory}\index{CipherFactory@{CipherFactory}}
+
+
+{\ttfamily \+\#include $<$Cipher\+Factory.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_cipher_factory_a62d70f9e69c31b521f261a3d3f4f3ff4}{register\+Cipher}} (const std::\+string \&name, std::\+function$<$ \doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*}(const std::\+vector$<$ std::\+string $>$ \&)$>$ cipher)
+\item 
+\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_cipher_factory_ab2c9a736e7649cd6232232857a8064df}{create\+Cipher}} (const std::\+string \&name)
+\item 
+bool \doxymbox{\hyperlink{class_cipher_factory_ad5da11fd1168242b036860c43e58b4f7}{cipher\+Exists}} (const std::\+string \&name) const
+\item 
+\doxymbox{\hyperlink{class_cipher_factory_aaef1de73595b6b2a904ffefdd79e714c}{\texorpdfstring{$\sim$}{\string~}\+Cipher\+Factory}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_cipher_factory}{Cipher\+Factory}} \& \doxymbox{\hyperlink{class_cipher_factory_adb4e3de938765f8927830cb6eb75ec31}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton gyár osztály, amely a kódolók regisztrálását és létrehozását végzi. 
+
+\label{doc-constructors}
+\Hypertarget{class_cipher_factory_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cipher_factory_aaef1de73595b6b2a904ffefdd79e714c}\index{CipherFactory@{CipherFactory}!````~CipherFactory@{\texorpdfstring{$\sim$}{\string~}CipherFactory}}
+\index{````~CipherFactory@{\texorpdfstring{$\sim$}{\string~}CipherFactory}!CipherFactory@{CipherFactory}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CipherFactory()}{\string~CipherFactory()}}
+{\footnotesize\ttfamily \label{class_cipher_factory_aaef1de73595b6b2a904ffefdd79e714c} 
+Cipher\+Factory::\+\texorpdfstring{$\sim$}{\string~}\+Cipher\+Factory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Alap destruktor. 
+
+\label{doc-func-members}
+\Hypertarget{class_cipher_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cipher_factory_ad5da11fd1168242b036860c43e58b4f7}\index{CipherFactory@{CipherFactory}!cipherExists@{cipherExists}}
+\index{cipherExists@{cipherExists}!CipherFactory@{CipherFactory}}
+\doxysubsubsection{\texorpdfstring{cipherExists()}{cipherExists()}}
+{\footnotesize\ttfamily \label{class_cipher_factory_ad5da11fd1168242b036860c43e58b4f7} 
+bool Cipher\+Factory::\+cipher\+Exists (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption}) const}
+
+Ellenőrzi, hogy létezik-\/e a megadott nevű kódoló. 
+\begin{DoxyParams}{Parameters}
+{\em name} & a keresett kódoló neve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+igaz, ha a kódoló regisztrálva van 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_factory_ab2c9a736e7649cd6232232857a8064df}\index{CipherFactory@{CipherFactory}!createCipher@{createCipher}}
+\index{createCipher@{createCipher}!CipherFactory@{CipherFactory}}
+\doxysubsubsection{\texorpdfstring{createCipher()}{createCipher()}}
+{\footnotesize\ttfamily \label{class_cipher_factory_ab2c9a736e7649cd6232232857a8064df} 
+\doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*} Cipher\+Factory::\+create\+Cipher (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{}\end{DoxyParamCaption})}
+
+Létrehoz egy kódolót a leíró string alapján. 
+\begin{DoxyParams}{Parameters}
+{\em name} & kódoló leírás (név és paraméterek) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a létrehozott kódoló objektum pointere 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_factory_adb4e3de938765f8927830cb6eb75ec31}\index{CipherFactory@{CipherFactory}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!CipherFactory@{CipherFactory}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_cipher_factory_adb4e3de938765f8927830cb6eb75ec31} 
+\doxymbox{\hyperlink{class_cipher_factory}{Cipher\+Factory}} \& Cipher\+Factory::\+get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Visszaadja a gyár egyetlen példányát. \begin{DoxyReturn}{Returns}
+a singleton gyár referenciaja 
+\end{DoxyReturn}
+\Hypertarget{class_cipher_factory_a62d70f9e69c31b521f261a3d3f4f3ff4}\index{CipherFactory@{CipherFactory}!registerCipher@{registerCipher}}
+\index{registerCipher@{registerCipher}!CipherFactory@{CipherFactory}}
+\doxysubsubsection{\texorpdfstring{registerCipher()}{registerCipher()}}
+{\footnotesize\ttfamily \label{class_cipher_factory_a62d70f9e69c31b521f261a3d3f4f3ff4} 
+void Cipher\+Factory::\+register\+Cipher (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{name}{, }\item[{std::\+function$<$ \doxymbox{\hyperlink{class_cipher}{Cipher}} \texorpdfstring{$\ast$}{*}(const std::\+vector$<$ std::\+string $>$ \&)$>$}]{cipher}{}\end{DoxyParamCaption})}
+
+Regisztrál egy új kódolót a gyárban. 
+\begin{DoxyParams}{Parameters}
+{\em name} & a kódoló neve \\
+\hline
+{\em cipher} & a kódoló létrehozó függvénye \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Cipher\+Factory.\+h\end{DoxyCompactItemize}

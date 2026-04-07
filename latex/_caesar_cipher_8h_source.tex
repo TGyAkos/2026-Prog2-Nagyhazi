@@ -1,0 +1,34 @@
+\doxysection{Caesar\+Cipher.\+h}
+\hypertarget{_caesar_cipher_8h_source}{}\label{_caesar_cipher_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ user\ on\ 06/04/2026.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ TITKOSITO\_CAESARCIPHER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ TITKOSITO\_CAESARCIPHER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Cipher.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Registrar.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_caesar_cipher_a567a7824c9db06df3e1aa2f50c49f2bd}{CaesarCipher}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_cipher}{Cipher}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ shift;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{class_caesar_cipher_a567a7824c9db06df3e1aa2f50c49f2bd}{CaesarCipher}}(\textcolor{keywordtype}{int}\ shift)\ :\ shift(shift)\ \{\}}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{class_caesar_cipher_a3d7d350fd6630d69138fcf0c7965594f}{CaesarCipher}}(\textcolor{keyword}{const}\ std::vector<std::string>\&\ params)\ :\ shift(params[0][0]\ ==\ \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)'}\ ?\ 0\ :\ stoi(params[0]))\ \{\}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \doxymbox{\hyperlink{class_caesar_cipher_ab4f0d5b5c5d2d13bbfe3459d38c0d514}{getCipherString}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00040\ \ \ \ \ \doxymbox{\hyperlink{class_cipher}{Cipher}}\ *\doxymbox{\hyperlink{class_caesar_cipher_a78acb81007f66d402a9b0ef7e9e77a9f}{clone}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00046\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_caesar_cipher_a451fcb48722e5b8e88c132c8e8453fb1}{encode}}(\textcolor{keyword}{const}\ std::string\ \&message)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00052\ \ \ \ \ std::string\ \doxymbox{\hyperlink{class_caesar_cipher_a6131bcafaf34c76baa9e5f65d8d7fc65}{decode}}(\textcolor{keyword}{const}\ std::string\ \&ciphertext)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ \ \ \ \ \doxymbox{\hyperlink{class_caesar_cipher_a376252c2347d454984c5acc9269f0eea}{\string~CaesarCipher}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//TITKOSITO\_CAESARCIPHER\_H}}
+
+\end{DoxyCode}

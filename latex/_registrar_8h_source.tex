@@ -1,0 +1,25 @@
+\doxysection{Registrar.\+h}
+\hypertarget{_registrar_8h_source}{}\label{_registrar_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ user\ on\ 06/04/2026.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ TITKOSITO\_REGISTRAR\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ TITKOSITO\_REGISTRAR\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}CipherFactory.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00017\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_registrar_ac49205aaf734f6a1fed37b6c0e98a166}{Registrar}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{struct_registrar_ac49205aaf734f6a1fed37b6c0e98a166}{Registrar}}(\textcolor{keyword}{const}\ std::string\ \&name)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_cipher_factory_adb4e3de938765f8927830cb6eb75ec31}{CipherFactory::getInstance}}().\doxymbox{\hyperlink{class_cipher_factory_a62d70f9e69c31b521f261a3d3f4f3ff4}{registerCipher}}(}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name,\ [](\textcolor{keyword}{const}\ std::vector<std::string>\ \&params)\ -\/>\ \doxymbox{\hyperlink{class_cipher}{Cipher}}\ *\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ T(params);\ \});}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TITKOSITO\_REGISTRAR\_H}}
+
+\end{DoxyCode}

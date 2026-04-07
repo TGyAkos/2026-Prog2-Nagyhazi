@@ -1,0 +1,58 @@
+\doxysection{String\+Funcs Struct Reference}
+\hypertarget{struct_string_funcs}{}\label{struct_string_funcs}\index{StringFuncs@{StringFuncs}}
+
+
+{\ttfamily \+\#include $<$String\+Funcs.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std::\+vector$<$ std::\+string $>$ \doxymbox{\hyperlink{struct_string_funcs_a5168100986091fc7456b2c0cbb9d0aab}{split}} (std::\+string s, const std::\+string \&delimiter)
+\item 
+static char \doxymbox{\hyperlink{struct_string_funcs_adf2738c7f6103348f482edc84fa98701}{shift\+\_\+char}} (char c, int shift)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sztringkezelő segédfüggvényeket tartalmazó segédstruktúra. 
+
+\label{doc-func-members}
+\Hypertarget{struct_string_funcs_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_string_funcs_adf2738c7f6103348f482edc84fa98701}\index{StringFuncs@{StringFuncs}!shift\_char@{shift\_char}}
+\index{shift\_char@{shift\_char}!StringFuncs@{StringFuncs}}
+\doxysubsubsection{\texorpdfstring{shift\_char()}{shift\_char()}}
+{\footnotesize\ttfamily \label{struct_string_funcs_adf2738c7f6103348f482edc84fa98701} 
+char String\+Funcs::\+shift\+\_\+char (\begin{DoxyParamCaption}\item[{char}]{c}{, }\item[{int}]{shift}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Eltol egy kisbetűs karaktert az ábécében. 
+\begin{DoxyParams}{Parameters}
+{\em c} & az eltolandó karakter \\
+\hline
+{\em shift} & az eltolás mértéke \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+az eltolt karakter 
+\end{DoxyReturn}
+\Hypertarget{struct_string_funcs_a5168100986091fc7456b2c0cbb9d0aab}\index{StringFuncs@{StringFuncs}!split@{split}}
+\index{split@{split}!StringFuncs@{StringFuncs}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{struct_string_funcs_a5168100986091fc7456b2c0cbb9d0aab} 
+std::\+vector$<$ std::\+string $>$ String\+Funcs::\+split (\begin{DoxyParamCaption}\item[{std::\+string}]{s}{, }\item[{const std::\+string \&}]{delimiter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Feldarabol egy sztringet a megadott elválasztó mentén. 
+\begin{DoxyParams}{Parameters}
+{\em s} & a feldarabolandó sztring \\
+\hline
+{\em delimiter} & az elválasztó sztring \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a feldarabolt részek vektora 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+String\+Funcs.\+h\end{DoxyCompactItemize}
